@@ -8,14 +8,15 @@ OPTS="$OPTS -pidfile /tmp/windows-10-pro.pid"
  
  
 # Processor core2duo qemu64 host
-OPTS="$OPTS -cpu qemu64,kvm=off"
+#OPTS="$OPTS -cpu qemu64,kvm=off"
+OPTS="$OPTS -cpu host,kvm=off"
 OPTS="$OPTS -smp 8,sockets=1,cores=4,threads=2"
 OPTS="$OPTS -enable-kvm"
  
  
 # Machine
-OPTS="$OPTS -machine type=pc-i440fx-2.1,accel=kvm"
-#OPTS="$OPTS -machine type=q35,accel=kvm"
+#OPTS="$OPTS -machine type=pc-i440fx-2.1,accel=kvm"
+OPTS="$OPTS -machine type=q35,accel=kvm"
  
  
 # The following setting enables S3 (suspend to RAM). OVMF supports S3
