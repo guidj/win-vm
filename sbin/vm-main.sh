@@ -9,7 +9,7 @@ OPTS="$OPTS -pidfile /tmp/windows-10-pro.pid"
  
 # Processor core2duo qemu64 host
 #OPTS="$OPTS -cpu qemu64,kvm=off"
-OPTS="$OPTS -cpu host,kvm=off"
+OPTS="$OPTS -cpu host,kvm=off,hv_vendor_id=Nvidia43Fix"
 OPTS="$OPTS -smp 8,sockets=1,cores=4,threads=2"
 OPTS="$OPTS -enable-kvm"
  
@@ -119,7 +119,8 @@ OPTS="$OPTS -device driver=ide-cd,bus=ide.1,drive=virtiocd"
 #OPTS="$OPTS -device virtio-net-pci,mac=52:54:00:xx:xx:xx,netdev=brlan"
  
 # Disable display
-#OPTS="$OPTS -vga qxl"
+#OPTS="$OPTS -vga virtio"
+OPTS="$OPTS -vga qxl"
 #OPTS="$OPTS -vga none"
 #OPTS="$OPTS -serial null"
 #OPTS="$OPTS -parallel null"
