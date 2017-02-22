@@ -7,6 +7,7 @@ TODO:
 Main guide: 
   - GPU-Passthrough for 2 NVIDIA Cards: [TurluCode](http://turlucode.com/qemu-kvm-on-arch-linux-guide/)
   - Second: [TurluCode](http://turlucode.com/qemu-kvm-installing-windows-10-client/)
+  
 Exceptions:
   - Hugepages configuration: [ArchLinux-KVM](https://wiki.archlinux.org/index.php/KVM)
 
